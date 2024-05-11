@@ -27,11 +27,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <div class="uk-container-xlarge uk-grid" style="padding:15px;" uk-grid>
   <div class="uk-width-4-5@l"> 
     <!--BEGIN MOBILE MENU-->
-    <div class="uk-hidden@l">
+    <div class="uk-hidden@l" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
       <nav class="uk-navbar-container uk-navbar-transparent uk-text-left" uk-navbar>
-        <div class="uk-navbar-center">
+		  <a href="#home" class="uk-navbar-item uk-logo"><img src="images/skull.webp" width="75px" alt="CSI to CEO"></a>
+        <div class="uk-navbar-left">			
           <ul class="uk-navbar-nav">
-            <li><a href="#home"><strong>CSI to CEO</strong></a>
+            <li><a href="#"><strong>CSI to CEO</strong></a>
               <div class="uk-navbar-dropdown">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
                   <li> <a href="#about"> About the Book</a> </li>
@@ -163,8 +164,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <div uk-sticky="position: top"><br>
       <br>
       <br>
+      <center>
+        <a href="#home"><img src="images/skull.webp" width="100px" alt="CSI to CEO"></a>
+      </center>
       <ul class="uk-nav uk-nav-primary uk-text-left" style="padding:15px">
-        <li class="uk-parent"><a href="#home"> Home </a></li>
         <li class="uk-parent"><a href="#about"> About the Book</a></li>
         <li class="uk-parent"><a href="#stephen"> Stephen J. Lu</a></li>
         <li class="uk-parent"><a href="#eve"> Eve Porinchak</a></li>
