@@ -13,6 +13,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
 <title>CSI to CEO: What the Dead Can Teach Us About Life and Leadership</title>
+<style>
+#countdown {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+</style>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <link href="css/bootstrap-dist.css" rel="stylesheet" type="text/css">
 <link href="css/uikit.css" rel="stylesheet" type="text/css">
@@ -41,9 +47,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </p>
     <p>Book Status: <strong>Final Proofs Submitted</strong><br>
       Editions: <strong>Hardcover & Paperback (in color); E-book</strong></p>
-    <p>Release Date: <strong>October 1, 2024</strong></p>
+    <p><font size="+2">Release Date: <strong>October 1, 2024</strong></font></p>
   </div>
-  <p> <br>
+  <p>
+  <div id="countdown"></div>
+  <script>
+    // Set the target date and time (adjust this to your desired countdown end time)
+    var countDownDate = new Date("September 30, 2024 23:59:59").getTime();
+
+    // Update the countdown every 1 second
+    var countdownFunction = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the time difference between now and the countdown date
+        var timeRemaining = countDownDate - now;
+
+        // Calculate days, hours, minutes, and seconds remaining
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Display the result
+        document.getElementById("countdown").innerHTML = days + " days " + hours + " hrs "
+        + minutes + " min " + seconds + " sec";
+
+        // If the countdown is over, display a message
+        if (timeRemaining < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "<i>CSI to CEO</i> is available NOW!";
+        }
+    }, 1000);
+</script> 
+  <br>
   <div class="uk-flex-center uk-text-center" uk-grid>
     <div><a href="https://a.co/d/dbL1EvP" role="button" target="_blank"><img src="images/amazon-reduced.png" alt="Order on Amazon"></a></div>
     <div><a href="https://www.goodreads.com/book/show/218582962-csi-to-ceo" role="button" target="_blank"><img src="images/goodreads.png" alt="Add to Goodreads"> </a></div>
